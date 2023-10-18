@@ -47,14 +47,31 @@ Started by planning out the HTML and class names using BEM. Then coded the CSS u
 
 ### What I learned
 
-Got more practice at planning out HTML and naming CSS classes using BEM. Also using display: block on an image will get rid of the small empty space that exists underneath. This space is cased by the image being display: inline by default. Also with object-fit: cover, the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+Got more practice at planning out HTML and naming CSS classes using BEM.
+
+Also using display: block on an image will get rid of the small empty space that exists underneath. This space is caused by the image being display: inline by default.
+
+In HTML, to use different image sources, use the picture element and specify different srcset attributes depending on screen size. Always include an img tag as this will be used if no suitable srcset attribute is found. When styling this picture element in css, apply the styles to the img tag (give it a class), and these styles will apply to whichever image the browser uses.
+
+```html
+<picture>
+  <source
+    srcset="./images/image-product-desktop.jpg"
+    media="(min-width: 600px)"
+  />
+  <img
+    src="./images/image-product-mobile.jpg"
+    alt="perfume"
+    class="card-image__image"
+  />
+</picture>
+```
 
 ```css
 card-image img {
   width: 100%;
   display: block; /*gets rid of whitespace under image */
   border-radius: 1em 1em 0 0;
-  object-fit: cover;
 }
 ```
 

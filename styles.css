@@ -33,14 +33,19 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   max-width: 90%;
 }
 
-.card-image img {
+.card > * {
+  flex-basis: 50%;
+}
+
+.card-image__image {
   width: 100%;
-  display: block; /*gets rid of whitespace under image */
+  display: block; /* gets rid of whitespace under image */
   border-radius: 1em 1em 0 0;
-  object-fit: cover;
 }
 
 .card-content {
@@ -124,17 +129,17 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 600px) {
   .card {
-    display: flex;
-    width: clamp(250px, 90%, 590px);
+    flex-direction: row;
+    width: clamp(250px, 90%, 600px);
   }
 
   .card > * {
     flex-basis: 50%;
   }
 
-  .card-image img {
+  .card-image__image {
     height: 100%;
     border-radius: 1em 0 0 1em;
   }

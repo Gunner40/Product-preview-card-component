@@ -66,6 +66,8 @@ body {
 }
 
 .card-content__price {
+  display: flex;
+  align-items: center;
   margin-top: 1em;
 }
 

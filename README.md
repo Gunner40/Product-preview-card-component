@@ -68,9 +68,9 @@ In HTML, to use different image sources, use the picture element and specify dif
 ```
 
 ```css
-card-image img {
+.card-image__image {
   width: 100%;
-  display: block; /*gets rid of whitespace under image */
+  display: block; /* gets rid of whitespace under image */
   border-radius: 1em 1em 0 0;
 }
 ```

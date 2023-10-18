@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Gunner40/Product-preview-card-component)
-- Live Site URL: [Add live site URL here](https://gunner40.github.io/Product-preview-card-component/)
+- Solution URL: [https://github.com/Gunner40/Product-preview-card-component]
+- Live Site URL: [https://gunner40.github.io/Product-preview-card-component/]
 
 ## My process
 
